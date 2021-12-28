@@ -1,6 +1,8 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/storage";
 import "firebase/compat/firestore";
+import "firebase/compat/auth";
+import { GoogleAuthProvider } from "firebase/auth";
 // Import the functions you need from the SDKs you need
 // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -23,6 +25,14 @@ firebase.initializeApp(firebaseConfig);
 // Initialize services
 const projectStorage = firebase.storage();
 const projectFirestore = firebase.firestore();
+const projectAuth = firebase.auth();
+const authProvider = new GoogleAuthProvider();
 const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
-export { projectStorage, projectFirestore, timestamp };
+export {
+  projectStorage,
+  projectFirestore,
+  projectAuth,
+  authProvider,
+  timestamp,
+};
