@@ -123,6 +123,16 @@ label:hover {
   box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
   border: 3px solid white;
 }
+.modal-wrap {
+  margin: auto;
+  width: 50%;
+  background-color: white;
+}
+.caption-div {
+  /* margin: auto;
+  width: 50%;
+  background-color: white; */
+}
 
 /* sign in styles */
 .btn-div {
@@ -135,7 +145,8 @@ label:hover {
   align-items: center;
   flex-direction: column;
 }
-.btn-div h1, p {
+.btn-div h1,
+p {
   text-align: center;
 }
 .btn-wrap {
