@@ -39,8 +39,8 @@ function App() {
   if (user)
     return (
       <div className="App">
-        <Title logout={logoutHandler} />
-        <UploadForm />
+        <Title logout={logoutHandler} user={user}/>
+        <UploadForm user={user}/>
         <ImageGrid setSelectedImg={setSelectedImg} />
         {selectedImg && (
           <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
